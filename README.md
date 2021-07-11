@@ -20,9 +20,7 @@ example: For i = 0 To 11
 	Cells(4 + i, 2).Value = tickerVolumes(i)
 	Cells(4 + i, 3).Value = tickerEndingPrices(i) / tickerStartingPrices(i) - 1
         
-This in addition with other coding scripts produced a table with 3 headers similar to the module. In the end I was able to get the code performance for the stocks in 2017 and 2018 (add image)
-
-## Summary
+This in addition with other coding scripts produced a table with 3 headers similar to the module. In the end I was able to get the code performance for the stocks in [2017](https://github.com/somtoesomeju/stocks-analysis/blob/main/VBA_challenge_2017.png) and [2018](https://github.com/somtoesomeju/stocks-analysis/blob/main/VBA_challenge_2018.png## Summary)
 To summarize, I was unsuccessful in replicating the code as it was from the module, although I was able to produce a table with the values. Refactoring code is a great way to get a more detailed analysis of what is being looked for in the excel sheet. It also significantly reduces the time it would take to go through the cells and calculate these values manually. However, if not done correctly it can lead to many errors. This was my experience in this assignment.
 
 In regards to this assignment, the main advantage of refactoring the code is that it shows there are multiple ways to reach the end result. From the module, a different set of code was produced to give the refactored table. Using the vba template, we were tasked in refactoring it differently. This produced similar results. The disadvantage though, like in my case is that if not done properly it can further complicate the data.
