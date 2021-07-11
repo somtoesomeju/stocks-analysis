@@ -12,7 +12,7 @@ Steve just graduated from college with a finance degree and his parents want to 
 
 
 ## Results
-Based on my results, I was able to get a table that shows the average return of  stock for 2 years (2017) and (2018). The table is supposed to match with the tables from the module. However, mine was quite different. All of my stock were in the red (negative values). My values were also slightly different from that in the module. I made some errors and unfortunately able to figure out what I did wrong. Following the questions, I was able to loop through the tickers to get the average return
+Based on my results, I was able to get a table that shows the average return of  stock for 2 years (2017) and (2018). The table is supposed to match with the tables from the module. However, mine was quite different. All of my stock were in the red (negative values). My values were also slightly different from that in the module. I made some errors and unfortunately I was  unable to figure out what I did wrong. Following the questions, I was able to loop through the tickers to get the average return
 example: For i = 0 To 11
         
         Worksheets("All Stocks Analysis").Activate
