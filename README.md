@@ -12,16 +12,8 @@ Steve just graduated from college with a finance degree and his parents want to 
 
 
 ## Results
-Based on my results, I was able to get a table that shows the average return of  stock for 2 years (2017) and (2018). The table is supposed to match with the tables from the module. However, mine was quite different. All of my stock were in the red (negative values). My values were also slightly different from that in the module. I made some errors and unfortunately I was  unable to figure out what I did wrong. Following the questions, I was able to loop through the tickers to get the average return
-example: For i = 0 To 11
-        
-        Worksheets("All Stocks Analysis").Activate
-	Cells(4 + i, 1).Value = tickers(i)
-	Cells(4 + i, 2).Value = tickerVolumes(i)
-	Cells(4 + i, 3).Value = tickerEndingPrices(i) / tickerStartingPrices(i) - 1
-        
-This in addition with other coding scripts produced a table with 3 headers similar to the module. In the end I was able to get the code performance for the stocks in [2017](https://github.com/somtoesomeju/stocks-analysis/blob/main/VBA_challenge_2017.png) and 
-[2018](https://github.com/somtoesomeju/stocks-analysis/blob/main/VBA_challenge_2018.png). To summarize, I was unsuccessful in replicating the code as it was from the module, although I was able to produce a table with the values. Refactoring code is a great way to get a more detailed analysis of what is being looked for in the excel sheet. It also significantly reduces the time it would take to go through the cells and calculate these values manually. However, if not done correctly it can lead to many errors. This was my experience in this assignment.
+Based on my results, I was able to replicate the same table with the refractored data. Making a few tweaks to the all stocks analysis sheet, it changed the outcome of my data. Initially, I had an error due to the fact that I did not properly loop through the output arrays. I created the arrays and did not add the iterator (i) when I was attempting to loop through the data. Upon correcting my error, the table was successfully created. The values in my screenshots were a little different from the module, although the format was the same at the end. I was able to get the runtime data for 2017(image) and 2018(image). 
 
-In regards to this assignment, the main advantage of refactoring the code is that it shows there are multiple ways to reach the end result. From the module, a different set of code was produced to give the refactored table. Using the vba template, we were tasked in refactoring it differently. This produced similar results. The disadvantage though, like in my case is that if not done properly it can further complicate the data.
+From the analysis, it is clear that there are multiple ways to get to the same end result. This shows the beauty of using VBA to refactor code. The main disadvantage though is that VBA usually involves long code, so making a slight mistake in refractoring can give you an error (or false data). In relation to the original script in module 2, refractoring the data meant the data meant that the runtime was a bit faster compared to the original data. In conclusion, using VBA we can increase/decrease the runtime of data.
+
 
