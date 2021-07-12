@@ -12,8 +12,20 @@ Steve just graduated from college with a finance degree and his parents want to 
 
 
 ## Results
-Based on my results, I was able to replicate the same table with the refractored data. Making a few tweaks to the all stocks analysis sheet, it changed the outcome of my data. Initially, I had an error due to the fact that I did not properly loop through the output arrays. I created the arrays and did not add the iterator (i) when I was attempting to loop through the data. Upon correcting my error, the table was successfully created. The values in my screenshots were a little different from the module, although the format was the same at the end. I was able to get the runtime data for 2017(image) and 2018(image). 
+Based on my results, I was able to replicate the same table with the refractored data. Making a few tweaks to the all stocks analysis sheet, it changed the outcome of my data. Initially, I had an error due to the fact that I did not properly loop through the output arrays. I created the arrays and did not add the iterator (i) when I was attempting to loop through the data. Upon correcting my error, the table was successfully created.
+
+For i = 0 To 11
+    
+    Worksheets("All Stocks Analysis").Activate
+    Cells(4 + i, 1).Value = tickers(i)
+    Cells(4 + i, 2).Value = tickerVolumes(i)
+    Cells(4 + i, 3).Value = tickerEndingPrices(i) / tickerStartingPrices(i) - 1
+    
+ initially, when writing this script, I got an error because I failed to add the (i) iterator. After a review, the final data was modified and corrected to include the iterator. 
+ 
+The values in my screenshots were a little different from the module, although the format was the same at the end. I was able to get the runtime data for [2017](https://github.com/somtoesomeju/stocks-analysis/blob/main/VBA_Challenge_2017.png) and [2018](https://github.com/somtoesomeju/stocks-analysis/blob/main/VBA_Challenge_2018.png)
 
 From the analysis, it is clear that there are multiple ways to get to the same end result. This shows the beauty of using VBA to refactor code. The main disadvantage though is that VBA usually involves long code, so making a slight mistake in refractoring can give you an error (or false data). In relation to the original script in module 2, refractoring the data meant the data meant that the runtime was a bit faster compared to the original data. In conclusion, using VBA we can increase/decrease the runtime of data.
+
 
 
